@@ -13,7 +13,9 @@ group :production do
   gem 'pg'
 end
 
-gem 'rufus-scheduler'                     #for turning day/night on and off
+gem 'devise'
+
+gem 'rufus-scheduler', '~> 2.0'                     #for turning day/night on and off
 
 gem 'rails_12factor', group: :production
 

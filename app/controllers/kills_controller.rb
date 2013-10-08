@@ -1,4 +1,6 @@
 class KillsController < ApplicationController
+
+  before_filter :authenticate_user!
   # GET /kills
   # GET /kills.json
   def index
