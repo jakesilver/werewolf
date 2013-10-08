@@ -6,11 +6,6 @@ class Game < ActiveRecord::Base
   attr_accessible :createdDate, :dayNightFreq, :dayORnight
   validates :authenticate_user!, :dayNightFreq, presence: true
 
-
-
-
-
-
   after_create :set_roles
 
 
@@ -60,6 +55,7 @@ class Game < ActiveRecord::Base
     end
 
   end
+
 
 
 end

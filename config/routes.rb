@@ -3,7 +3,8 @@ Werewolf::Application.routes.draw do
 
   root :to => 'welcome#index'
 
-  devise_for :users do
+  devise_for :users, :path_names => { :sign_up => 'register' } do
+
     get '/users/sign_out' => 'devise/sessions#destroy'
   end
 

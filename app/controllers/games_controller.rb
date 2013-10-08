@@ -1,6 +1,7 @@
 class GamesController < ApplicationController
 
-  before_filter :authenticate_user!
+  before_filter :authenticate_user!, :verify_is_admin
+
 
   # GET /games
   # GET /games.json
@@ -83,4 +84,11 @@ class GamesController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  private
+
+  def verify_is_admin
+    (current_user.nil?) ? redirect_to(root_path) : (redirect_to(root_path) unless current_user.admin?)
+  end
+
 end

@@ -1,6 +1,6 @@
 class PlayersController < ApplicationController
 
-  before_filter :authenticate_user!
+  before_filter :authenticate_user!, :verify_is_admin
   # GET /players
   # GET /players.json
   def index
