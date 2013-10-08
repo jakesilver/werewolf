@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  createdDate: 1
+  dayNightFreq: 1
+  dayORnight: false
+
+two:
+  createdDate: 1
+  dayNightFreq: 1
+  dayORnight: false

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  UserID: MyString
+  Alignment: MyString
+  isDead: false
+  lat: 1.5
+  lng: 1.5
+
+two:
+  UserID: MyString
+  Alignment: MyString
+  isDead: false
+  lat: 1.5
+  lng: 1.5
