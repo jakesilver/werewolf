@@ -3,8 +3,10 @@ require 'rufus-scheduler'
 
 
 class Game < ActiveRecord::Base
-  attr_accessible :createdDate, :dayNightFreq, :dayORnight
-  validates :authenticate_user!, :dayNightFreq, presence: true
+  attr_accessible :dayNightFreq, :dayORnight, :game_state, :kill_radius
+  validates :dayNightFreq, presence: true
+  validates :game_state, presence: true
+  validates :kill_radius, presence: true
 
   after_create :set_roles
 
@@ -14,36 +16,12 @@ class Game < ActiveRecord::Base
   def set_roles
 
     @cur_game = Game.last                                                         #set cur.game to the last game made
-    puts @cur_game.dayNightFreq
+    #puts @cur_game.dayNightFreq
 
-    @cur_time = @cur_game.dayORnight
-
-
-
-
-    scheduler = Rufus::Scheduler.start_new
-
-    scheduler.every (Rufus.to_time_string(@cur_game.dayNightFreq)) do
-      @cur_time = !@cur_time
-      if (@cur_time == true)
-        puts "it's nighttime"
-        @cur_game.update_attribute(:dayORnight, "true")                    #create new scheduler that
-      else                                                             #changes day/night based on the
-        @cur_game.update_attribute(:dayORnight, "false")                     #dayNightFreq (in minutes)
-        puts  "it's daytime"                                             #true = night, false = day
-      end
-      @cur_game.save
-
-    end
-
-    @players = Player.all                                                #sets all players to "townspeople"
-    for player in @players do
-      player.Alignment = "townspeople"
-      player.save
-    end
+    create_players(@cur_game.id)
 
     size = Player.count
-    puts size
+    #puts size
     num_wolves = (size*3)/10
     i = 0
     while i < num_wolves do
@@ -54,8 +32,100 @@ class Game < ActiveRecord::Base
       i+=1
     end
 
+    #@cur_time = @cur_game.dayORnight
+
+
+
+
+    @scheduler = Rufus::Scheduler.start_new
+
+
+
+    @scheduler.every (Rufus.to_time_string(@cur_game.dayNightFreq*60)) do
+=begin
+      @cur_time = !@cur_time
+      if (@cur_time == true)
+        puts "it's nighttime"
+        @cur_game.update_attribute(:dayORnight, "true")                    #create new scheduler that
+
+      else                                                             #changes day/night based on the
+        @cur_game.update_attribute(:dayORnight, "false")                     #dayNightFreq (in minutes)
+        puts  "it's daytime"                                             #true = night, false = day
+
+      end
+      @cur_game.save
+=end
+    timer(@cur_game.id)
+
+    end
+
+
+=begin
+    @players = Player.all                                                #sets all players to "townspeople"
+    for player in @players do
+      player.Alignment = "townspeople"
+      player.isDead = false
+      player.lat = rand(max = 100)
+      player.lng = rand(max = 100)
+      player.save
+    end
+=end
+
+
+
   end
 
+  def timer(game_id)
+    if Game.find(game_id).game_state != "ended"
+      @scheduler2 = Rufus::Scheduler.start_new
+      @scheduler2.every (Rufus.to_time_string (@cur_game.dayNightFreq*120)) do
+        if Game.find(game_id).game_state != "ended"
+          poll_votes(game_id)
+        else
+          @scheduler2.stop
+          #puts "stopped scheduler"
+        end
 
+      end
+    end
+  end
+
+  def create_players(game_id)
+    Player.delete_all
+    User.all.each do |user|
+      #puts "making player"
+      @new_player = Player.new(:vote_cast => "false", :votes_for => 0, :game_id => game_id, :isDead => "false", :Alignment => "townsperson",
+                          :user_id => user.id, :score => 0, :lat => rand(10), :lng => rand(10), :nickname => user.email.split('@')[0])
+      @new_player.save
+    end
+  end
+
+  def poll_votes(game_id)
+    most_votes = Player.first
+
+    Player.all.each do |player|
+      if player.votes_for > most_votes.votes_for
+        most_votes = player
+      end
+
+      most_votes.isDead = "true"
+      most_votes.save
+    end
+    Player.all.each do |player|
+      if player.isDead == "false"
+        player.score += 50
+      end
+      player.votes_for = 0
+      player.vote_cast = "false"
+      player.save
+    end
+    game_checker(game_id)
+
+
+  end
+
+  def game_checker(game_id)
+    #fix this
+  end
 
 end

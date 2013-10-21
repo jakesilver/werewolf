@@ -7,9 +7,9 @@
     <th>Isdead</th>
     <th>Lat</th>
     <th>Lng</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th>Nickname</th>
+    <th>Score</th>
+    <th>Votes For</th>
   </tr>
 
 <% @players.each do |player| %>
@@ -19,6 +19,9 @@
     <td><%= player.isDead %></td>
     <td><%= player.lat %></td>
     <td><%= player.lng %></td>
+    <td><%= player.nickname %></td>
+    <td><%= player.score %></td>
+    <td><%= player.votes_for %></td>
     <td><%= link_to 'Show', player %></td>
     <td><%= link_to 'Edit', edit_player_path(player) %></td>
     <td><%= link_to 'Destroy', player, method: :delete, data: { confirm: 'Are you sure?' } %></td>

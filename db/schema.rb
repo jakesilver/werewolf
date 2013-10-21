@@ -11,20 +11,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131008041208) do
+ActiveRecord::Schema.define(:version => 20131017023414) do
 
   create_table "games", :force => true do |t|
-    t.integer  "createdDate"
     t.integer  "dayNightFreq"
     t.boolean  "dayORnight"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
+    t.string   "game_state"
+    t.float    "kill_radius"
   end
 
   create_table "kills", :force => true do |t|
     t.string   "killerID"
     t.string   "victimID"
-    t.string   "timestamp"
     t.float    "lat"
     t.float    "lng"
     t.datetime "created_at", :null => false
@@ -32,11 +32,25 @@ ActiveRecord::Schema.define(:version => 20131008041208) do
   end
 
   create_table "players", :force => true do |t|
-    t.string   "UserID"
+    t.integer  "UserID",     :limit => 255
     t.string   "Alignment"
     t.boolean  "isDead"
     t.float    "lat"
     t.float    "lng"
+    t.datetime "created_at",                :null => false
+    t.datetime "updated_at",                :null => false
+    t.string   "nickname"
+    t.integer  "score"
+    t.integer  "votes_for"
+    t.integer  "game_id"
+    t.string   "vote_cast"
+  end
+
+  create_table "reports", :force => true do |t|
+    t.integer  "high_score"
+    t.integer  "game_ID"
+    t.string   "winners"
+    t.string   "most_kills"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
@@ -55,6 +69,8 @@ ActiveRecord::Schema.define(:version => 20131008041208) do
     t.datetime "created_at",                             :null => false
     t.datetime "updated_at",                             :null => false
     t.boolean  "admin"
+    t.integer  "total_score"
+    t.integer  "high_score"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

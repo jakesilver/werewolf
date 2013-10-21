@@ -1,5 +1,8 @@
 Werewolf::Application.routes.draw do
-  get "welcome/index"
+  resources :reports
+
+
+  #get "welcome/index"
 
   root :to => 'welcome#index'
 

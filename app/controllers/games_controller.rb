@@ -1,6 +1,6 @@
 class GamesController < ApplicationController
 
-  before_filter :authenticate_user!, :verify_is_admin
+  before_filter :verify_is_admin
 
 
   # GET /games
@@ -59,6 +59,7 @@ class GamesController < ApplicationController
 
   # PUT /games/1
   # PUT /games/1.json
+=begin
   def update
     @game = Game.find(params[:id])
 
@@ -72,6 +73,7 @@ class GamesController < ApplicationController
       end
     end
   end
+=end
 
   # DELETE /games/1
   # DELETE /games/1.json
@@ -85,10 +87,32 @@ class GamesController < ApplicationController
     end
   end
 
-  private
+  def restart_game
+    @curgame = Game.find(Player.first.game_id)
+    @dayNightFreq = @curgame.dayNightFreq
+    @kill_radius = @curgame.kill_radius
+    @curgame.game_state = "ended"
+    @curgame.save
+    @newGame = Game.create(:kill_radius => @kill_radius, :dayNightFreq => @dayNightFreq, :game_state => "started")
+    respond_to do |format|
+      format.html { redirect_to games_url }
+      format.json { render json: "game restarted" }
+    end
 
-  def verify_is_admin
-    (current_user.nil?) ? redirect_to(root_path) : (redirect_to(root_path) unless current_user.admin?)
   end
+
+  def start_game
+    @new_game = Game.new(:dayNightFreq => params[:dayNightFreq], :game_state => "started", :kill_radius => params[:kill_radius])
+    if @new_game.save
+      respond_to do |format|
+        format.json {render json: "game started"}
+      end
+    else
+      respond_to do |format|
+        format.json {render json: "error--game not started"}
+      end
+    end
+  end
+
 
 end
