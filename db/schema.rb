@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131017023414) do
+ActiveRecord::Schema.define(:version => 20131022030357) do
 
   create_table "games", :force => true do |t|
     t.integer  "dayNightFreq"
@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(:version => 20131017023414) do
     t.datetime "updated_at",   :null => false
     t.string   "game_state"
     t.float    "kill_radius"
+    t.float    "scent_radius"
   end
 
   create_table "kills", :force => true do |t|
@@ -44,6 +45,7 @@ ActiveRecord::Schema.define(:version => 20131017023414) do
     t.integer  "votes_for"
     t.integer  "game_id"
     t.string   "vote_cast"
+    t.string   "kill_made"
   end
 
   create_table "reports", :force => true do |t|

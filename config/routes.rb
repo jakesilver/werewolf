@@ -1,5 +1,6 @@
 Werewolf::Application.routes.draw do
-  resources :reports
+
+
 
 
   #get "welcome/index"
@@ -18,6 +19,9 @@ Werewolf::Application.routes.draw do
 
 
   resources :kills
+
+
+  resources :reports
 
 
   # The priority is based upon order of creation:

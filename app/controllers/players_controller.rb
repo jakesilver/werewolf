@@ -143,6 +143,19 @@ class PlayersController < ApplicationController
     @player.lat = params[:lat]
     @player.lng = params[:lng]
     @player.save
+    Player.each.all do |player|
+      if @player.Alignment != player.Alignment
+        if (player.UserID != @player.UserID) and ((player.lat - @player.lat).abs + (player.lng - @player.lng).abs < Game.find(@player.game_ID).scent_radius)
+          respond_to do |format|
+            format.json { render json: "opponent nearby!"}
+          end
+        else
+          respond_to do |format|
+            format.json { render json: "safe!"}
+          end
+        end
+      end
+    end
   end
 
   def vote_for_player
