@@ -2,20 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3b0618d-e2c3-415f-b555-48aa1bd30824" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/game.rb" afterPath="$PROJECT_DIR$/app/models/game.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/games_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/games_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/index.html.erb" afterPath="$PROJECT_DIR$/app/views/users/index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/kills_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/kills_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/users/new.html.erb" afterPath="$PROJECT_DIR$/app/views/users/new.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/players_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/players_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/games/show.html.erb" afterPath="$PROJECT_DIR$/app/views/games/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/werewolf.iml" afterPath="$PROJECT_DIR$/.idea/werewolf.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="werewolf.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -81,24 +68,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="users_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="151" column="47" selection-start="4030" selection-end="4030" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="game.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/game.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="20" selection-start="354" selection-end="354" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="players_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/players_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
@@ -129,7 +98,7 @@
       <file leaf-file-name="kills_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/kills_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="34" selection-start="385" selection-end="385" vertical-scroll-proportion="0.3409091">
+            <state line="9" column="79" selection-start="533" selection-end="533" vertical-scroll-proportion="0.36">
               <folding />
             </state>
           </provider>
@@ -172,8 +141,8 @@
         <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/players_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/game.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/kills_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/kills_controller.rb" />
       </list>
     </option>
   </component>
@@ -974,7 +943,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/kills_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="34" selection-start="385" selection-end="385" vertical-scroll-proportion="0.3409091">
+        <state line="9" column="79" selection-start="533" selection-end="533" vertical-scroll-proportion="0.36">
           <folding />
         </state>
       </provider>
