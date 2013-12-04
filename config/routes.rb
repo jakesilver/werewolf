@@ -3,42 +3,34 @@ Werewolf::Application.routes.draw do
 
 
 
-  get "sessions/new"
+  root :to => "users#new"
 
-  get "users/new"
-
-  #get "welcome/index"
-
-  root :to => "reports#index"
-
-
-
-
-
-
-=begin
-  devise_scope :user do
-    root :to => 'devise/sessions#new'
-
-  end
-=end
-
-
-
-
-
-
-
-  resources :players
+  get "log_out" => "sessions#destroy", :as => "log_out"
+  get "log_in" => "sessions#new", :as => "log_in"
+  get "sign_up" => "users#new", :as => "sign_up"
+  get "get_possible_kills" => "players#get_possible_kills", :as => "get_possible_kills"
+  get "kill_player/:nickname" => "players#kill_player", :as => "kill_player"
+  get "vote_for_player/:nickname" => "players#vote_for_player", :as => "vote_for_player"
+  get "get_votables" => "players#get_votables", :as => "get_votables"
+  get "restart_game" => "games#restart_game", :as => "restart_game"
+  get "report_position/" => "players#report_position", :as => "report_position"
+  get "totalscoreboard" => "users#totalscoreboard", :as => "totalscoreboard"
+  get "gscoreboard" => "users#gscoreboard", :as => "gscoreboard"
+  get "start_game/:dayNightFreq/:kill_radius/:scent_radius" => "games#start_game", :as => "start_game"
+  get "daily_report" => "kills#daily_report", :as => "daily_report"
+  get "players_alive" => "players#players_alive", :as => "players_alive"
+  get "types_left" => "players#types_left", :as => "types_left"
+  get "playing_game" => "games#playing_game", :as => "playing_game"
+  get "user_details" => "users#user_details", :as => "user_details"
+  get "am_i_signed_in" => "sessions#am_i_signed_in", :as => "am_i_signed_in"
+  get "logged_in" => "sessions#create", :as => "logged_in"
+  get "night_vs_day" => "games#night_vs_day", :as => "night_vs_day"
+  get "current_game" => "games#current_game", :as => "current_game"
 
 
-  resources :games
 
 
-  resources :kills
-
-
-  resources :reports
+  resources :users, :sessions, :games, :players, :reports, :kills
 
 
   # The priority is based upon order of creation:

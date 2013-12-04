@@ -39,6 +39,7 @@ class UsersController < ApplicationController
     @user = User.new(params[:user])
     @user.high_score = 0
     @user.total_score = 0
+    @user.level = 0
 
 
     if @user.save
@@ -133,7 +134,7 @@ class UsersController < ApplicationController
 
   def totalscoreboard
     score_hash = Hash.new
-    scores = User.where(:order => 'total_score', :limit => 5).all
+    scores = User.find(:all, :order => 'total_score desc', :limit => 5)
     i = 0
     while i < 5
       score_hash[i]=scores[i].email.split("@")[0] + ": " +scores[i].total_score.to_s
@@ -148,10 +149,10 @@ class UsersController < ApplicationController
   def gscoreboard
     score_hash = Hash.new
     if (!Player.first.nil?)
-      scores = Player.where(:order => 'score', :limit => 5).all
+      scores = Player.find(:all, :order => 'score desc', :limit => 5)
       i = 0
       while i < 5
-        score_hash[i]=scores[i].email.split("@")[0] + ": " + scores[i].high_score.to_s
+        score_hash[i]=scores[i].nickname.to_s + ": " + scores[i].score.to_s
         i+=1
       end
     else

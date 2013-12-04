@@ -80,9 +80,11 @@ class Game < ActiveRecord::Base
       if @players[i].votes_for > @most_votes.votes_for
         @most_votes = @players[i]
       end
+      i+=1
+    end
+    if @most_votes.votes_for > 0
       @most_votes.isDead = "true"
       @most_votes.save
-      i+=1
     end
 
     Player.all.each do |player|

@@ -16,8 +16,8 @@ class User < ActiveRecord::Base
   validates_uniqueness_of :email
 
 
-  def check_rank
-    self.rank = Math.sqrt(self.total_score).to_i / 100
+  def check_level
+    self.level = Math.sqrt(self.total_score).to_i / 100
   end
 
 

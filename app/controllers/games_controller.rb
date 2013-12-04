@@ -127,6 +127,7 @@ class GamesController < ApplicationController
   end
 
   def night_vs_day
+    @player = Player.find_by_user_id(current_user.id)
     if (((Time.now - Game.find(@player.game_ID).created_at) % (120*Game.find(@player.game_ID).dayNightFreq)) < \
     (Game.find(@player.game_ID).dayNightFreq*60))
       respond_to do |format|

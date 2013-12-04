@@ -59,7 +59,7 @@ class PlayersController < ApplicationController
       if @player.alignment != player.alignment
         if (player.user_id != @player.user_id) and \
         ((player.lat - @player.lat).abs + (player.lng - @player.lng).abs < Game.find(@player.game_ID).scent_radius)
-          #if players are within scent_radius of werewolf,
+          #if players are within scent_radius of werewolf, push notification
           message['message']='someone nearby'
         end
       end
@@ -73,7 +73,7 @@ class PlayersController < ApplicationController
     @player = Player.find_by_user_id(current_user.id)
     @voted = Player.find_by_nickname(params[:nickname])
     puts current_user.id
-    puts @player.nickname
+    puts @voted.nickname
     if (@player.isDead == "false") and (@player.vote_cast == "false") and \
     (@player.user_id != @voted.user_id) and (@player.alignment== "townsperson") and \
     (((Time.now - Game.find(@player.game_ID).created_at) % (120*Game.find(@player.game_ID).dayNightFreq)) < \
