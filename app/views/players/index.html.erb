@@ -2,31 +2,36 @@
 
 <table>
   <tr>
-    <th>Userid</th>
+
     <th>Alignment</th>
     <th>Isdead</th>
     <th>Lat</th>
     <th>Lng</th>
     <th>Nickname</th>
-    <th>Score</th>
-    <th>Votes For</th>
+    <th>Game ID</th>
+    <th>User ID</th>
+    <th>score</th>
+    <th></th>
+    <th></th>
+    <th></th>
   </tr>
 
-<% @players.each do |player| %>
-  <tr>
-    <td><%= player.UserID %></td>
-    <td><%= player.Alignment %></td>
-    <td><%= player.isDead %></td>
-    <td><%= player.lat %></td>
-    <td><%= player.lng %></td>
-    <td><%= player.nickname %></td>
-    <td><%= player.score %></td>
-    <td><%= player.votes_for %></td>
-    <td><%= link_to 'Show', player %></td>
-    <td><%= link_to 'Edit', edit_player_path(player) %></td>
-    <td><%= link_to 'Destroy', player, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
+  <% @players.each do |player| %>
+      <tr>
+
+        <td><%= player.alignment %></td>
+        <td><%= player.isDead %></td>
+        <td><%= player.lat %></td>
+        <td><%= player.lng %></td>
+        <td><%= player.nickname %></td>
+        <td><%= player.game_ID %></td>
+        <td><%= player.user_id %></td>
+        <td><%= player.score %></td>
+        <td><%= link_to 'Show', player %></td>
+        <td><%= link_to 'Edit', edit_player_path(player) %></td>
+        <td><%= link_to 'Destroy', player, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+  <% end %>
 </table>
 
 <br />

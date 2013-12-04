@@ -10,13 +10,8 @@
   <%= @game.dayNightFreq %>
 </p>
 
-<p>
-  <b>Dayornight:</b>
-  <%= @game.dayORnight %>
-</p>
 
 
-<%= link_to 'Edit', edit_game_path(@game) %> |
+<%= link_to 'Restart Game', restart_game_path %>
+<%= link_to 'Edit', edit_game_path(@game) %>
 <%= link_to 'Back', games_path %>
-
-<%= link_to "Sign out", destroy_user_session_path, :method => :delete %>

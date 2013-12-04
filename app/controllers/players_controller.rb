@@ -160,7 +160,9 @@ class PlayersController < ApplicationController
     @me = Player.find_by_user_id(current_user.id)
     i = 0
     if !@me.nil?
-      if (@me.isDead == "false") and (@me.vote_cast == "false") and ((Time.now - Game.find(@me.game_ID).created_at) > Game.find(@me.game_ID).dayNightFreq*60)  and (((Time.now - Game.find(@me.game_ID).created_at) % (120*Game.find(@me.game_ID).dayNightFreq)) < (Game.find(@me.game_ID).dayNightFreq*60))
+      if (@me.isDead == "false") and (@me.vote_cast == "false") and ((Time.now - Game.find(@me.game_ID).created_at) > \
+      Game.find(@me.game_ID).dayNightFreq*60)  and (((Time.now - Game.find(@me.game_ID).created_at) % \
+      (120*Game.find(@me.game_ID).dayNightFreq)) < (Game.find(@me.game_ID).dayNightFreq*60))
         if @me.alignment == "townsperson"
           while i < @players.length
             if (@players[i] != @me) and (@players[i].isDead != "true")

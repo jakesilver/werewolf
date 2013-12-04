@@ -72,13 +72,17 @@ class Game < ActiveRecord::Base
     puts "Polling Votes"
     puts Time.now
 
-    @most_votes = Player.first
-    Player.all.each do |player|
-      if player.votes_for > @most_votes.votes_for
-        @most_votes = player
+    @players = Player.where(:isDead => "false").all
+
+    @most_votes= @players[0]
+    i=0
+    while i<@players.length
+      if @players[i].votes_for > @most_votes.votes_for
+        @most_votes = @players[i]
       end
       @most_votes.isDead = "true"
       @most_votes.save
+      i+=1
     end
 
     Player.all.each do |player|
@@ -105,8 +109,8 @@ class Game < ActiveRecord::Base
       @cur_game.save
 
       @new_report = Report.new
-      if @wolves.length > @townies.length
-        @new_report.winners = "Wolves"
+      if (@wolves.length > @townies.length)
+        @new_report.winners = "Werewolves"
         Player.all.each do |player|
           if player.alignment == "werewolf" and player.isDead == "false"
             player.score += 500
