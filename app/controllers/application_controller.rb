@@ -1,16 +1,17 @@
 class ApplicationController < ActionController::Base
-  protect_from_forgery
-  #before_filter :verify_is_admin
-
+  before_filter :signed_in_user
   helper_method :current_user
+  include SessionsHelper
+
 
   private
-  def verify_is_admin
-    (current_user.nil?) ? redirect_to(root_path) : (redirect_to(root_path) unless current_user.admin?)
-  end
 
   def current_user
-    @current_user ||= User.find(session[:UserID]) if session[:UserID]
+    @current_user ||= User.find(session[:user_id]) if session[:user_id]
+  end
+
+  def signed_in_user
+    redirect_to log_in_url, notice: "Please sign in" unless signed_in?
   end
 
 end

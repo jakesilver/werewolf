@@ -2,36 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3b0618d-e2c3-415f-b555-48aa1bd30824" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/controllers/welcome_controller.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/config/initializers/devise.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/config/locales/devise.en.yml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/game.rb" afterPath="$PROJECT_DIR$/app/models/game.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.rdoc" afterPath="$PROJECT_DIR$/README.rdoc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/games_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/games_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/kill.rb" afterPath="$PROJECT_DIR$/app/models/kill.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/player.rb" afterPath="$PROJECT_DIR$/app/models/player.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/kills_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/kills_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/players_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/players_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/reports_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/reports_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/werewolf.iml" afterPath="$PROJECT_DIR$/.idea/werewolf.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="werewolf.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="c3b0618d-e2c3-415f-b555-48aa1bd30824" time="1382456430152" ignored="false" />
-    <file path="/Gemfile" changelist="c3b0618d-e2c3-415f-b555-48aa1bd30824" time="1381197440649" ignored="false" />
+    <file path="/Dummy.txt" changelist="c3b0618d-e2c3-415f-b555-48aa1bd30824" time="1386117283130" ignored="false" />
+    <file path="/Gemfile" changelist="c3b0618d-e2c3-415f-b555-48aa1bd30824" time="1382571293495" ignored="false" />
     <file path="/new.html.erb" changelist="c3b0618d-e2c3-415f-b555-48aa1bd30824" time="1381202868329" ignored="false" />
-    <file path="/routes.rb" changelist="c3b0618d-e2c3-415f-b555-48aa1bd30824" time="1382456513313" ignored="false" />
+    <file path="/routes.rb" changelist="c3b0618d-e2c3-415f-b555-48aa1bd30824" time="1382579122535" ignored="false" />
     <file path="/game.rb" changelist="c3b0618d-e2c3-415f-b555-48aa1bd30824" time="1382410634882" ignored="false" />
     <file path="/devise.rb" changelist="c3b0618d-e2c3-415f-b555-48aa1bd30824" time="1381201424005" ignored="false" />
-    <file path="/index.html.erb" changelist="c3b0618d-e2c3-415f-b555-48aa1bd30824" time="1381287173887" ignored="false" />
+    <file path="/index.html.erb" changelist="c3b0618d-e2c3-415f-b555-48aa1bd30824" time="1382577543009" ignored="false" />
     <file path="/seeds.rb" changelist="c3b0618d-e2c3-415f-b555-48aa1bd30824" time="1381207718565" ignored="false" />
-    <file path="/user.rb" changelist="c3b0618d-e2c3-415f-b555-48aa1bd30824" time="1381207445157" ignored="false" />
-    <file path="/kills_controller.rb" changelist="c3b0618d-e2c3-415f-b555-48aa1bd30824" time="1381282055532" ignored="false" />
-    <file path="/games_controller.rb" changelist="c3b0618d-e2c3-415f-b555-48aa1bd30824" time="1382403612360" ignored="false" />
-    <file path="/README.rdoc" changelist="c3b0618d-e2c3-415f-b555-48aa1bd30824" time="1381261098991" ignored="false" />
-    <file path="/application_controller.rb" changelist="c3b0618d-e2c3-415f-b555-48aa1bd30824" time="1381978287004" ignored="false" />
-    <file path="/players_controller.rb" changelist="c3b0618d-e2c3-415f-b555-48aa1bd30824" time="1382404292863" ignored="false" />
+    <file path="/user.rb" changelist="c3b0618d-e2c3-415f-b555-48aa1bd30824" time="1386119995996" ignored="false" />
+    <file path="/kills_controller.rb" changelist="c3b0618d-e2c3-415f-b555-48aa1bd30824" time="1386119200126" ignored="false" />
+    <file path="/games_controller.rb" changelist="c3b0618d-e2c3-415f-b555-48aa1bd30824" time="1386118716596" ignored="false" />
+    <file path="/README.rdoc" changelist="c3b0618d-e2c3-415f-b555-48aa1bd30824" time="1382456804287" ignored="false" />
+    <file path="/application_controller.rb" changelist="c3b0618d-e2c3-415f-b555-48aa1bd30824" time="1382574628019" ignored="false" />
+    <file path="/players_controller.rb" changelist="c3b0618d-e2c3-415f-b555-48aa1bd30824" time="1386125568191" ignored="false" />
     <file path="/player.rb" changelist="c3b0618d-e2c3-415f-b555-48aa1bd30824" time="1382411062042" ignored="false" />
     <file path="/20131009021837_create_reports.rb" changelist="c3b0618d-e2c3-415f-b555-48aa1bd30824" time="1381285145949" ignored="false" />
     <file path="/report.rb" changelist="c3b0618d-e2c3-415f-b555-48aa1bd30824" time="1381285431493" ignored="false" />
@@ -40,6 +43,9 @@
     <file path="/20131017005934_change_user_id_in_players.rb" changelist="c3b0618d-e2c3-415f-b555-48aa1bd30824" time="1381971722397" ignored="false" />
     <file path="/devise_controller.rb" changelist="c3b0618d-e2c3-415f-b555-48aa1bd30824" time="1382406541387" ignored="false" />
     <file path="/kill.rb" changelist="c3b0618d-e2c3-415f-b555-48aa1bd30824" time="1382410802890" ignored="false" />
+    <file path="/welcome_controller.rb" changelist="c3b0618d-e2c3-415f-b555-48aa1bd30824" time="1382577815677" ignored="false" />
+    <file path="/registrations_controller.rb" changelist="c3b0618d-e2c3-415f-b555-48aa1bd30824" time="1382578943419" ignored="false" />
+    <file path="/reports_controller.rb" changelist="c3b0618d-e2c3-415f-b555-48aa1bd30824" time="1382579136199" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,43 +73,16 @@
       <file leaf-file-name="schema.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db/schema.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="35" selection-start="1749" selection-end="1749" vertical-scroll-proportion="0.0">
+            <state line="38" column="19" selection-start="1684" selection-end="1684" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gemfile">
+      <file leaf-file-name="sessions_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routes.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="39" selection-start="162" selection-end="162" vertical-scroll-proportion="0.33632287">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/welcome/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="16" selection-start="59" selection-end="59" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="devise_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p247@global/gems/devise-3.1.1/app/controllers/devise_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="26" selection-start="1047" selection-end="1047" vertical-scroll-proportion="0.0">
+            <state line="2" column="2" selection-start="125" selection-end="125" vertical-scroll-proportion="0.06726457">
               <folding />
             </state>
           </provider>
@@ -132,22 +111,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/players/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/players/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/players/show.html.erb" />
-        <option value="$PROJECT_DIR$/db/migrate/20131017005934_change_user_id_in_players.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/reports_controller.rb" />
-        <option value="$PROJECT_DIR$/app/models/report.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/games_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/players_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/kills_controller.rb" />
-        <option value="$USER_HOME$/.rvm/gems/ruby-2.0.0-p247@global/gems/devise-3.1.1/app/controllers/devise_controller.rb" />
-        <option value="$PROJECT_DIR$/app/models/game.rb" />
         <option value="$PROJECT_DIR$/app/models/kill.rb" />
-        <option value="$PROJECT_DIR$/db/schema.rb" />
         <option value="$PROJECT_DIR$/app/models/player.rb" />
+        <option value="$PROJECT_DIR$/README.rdoc" />
+        <option value="$PROJECT_DIR$/app/views/welcome/index.html.erb" />
+        <option value="$USER_HOME$/.rvm/gems/ruby-2.0.0-p247@global/gems/devise-3.1.1/app/controllers/devise/registrations_controller.rb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/games_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/kills_controller.rb" />
+        <option value="$PROJECT_DIR$/db/schema.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/welcome_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/models/user.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/players_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/reports_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
       </list>
     </option>
   </component>
@@ -189,6 +168,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -196,10 +176,6 @@
               <option name="myItemId" value="werewolf" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -207,51 +183,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="devise (v3.1.1, RVM: ruby-2.0.0-p247 [global]) [gem]" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
               <option name="myItemId" value="werewolf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="devise (v3.1.1, RVM: ruby-2.0.0-p247 [global]) [gem]" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="werewolf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="devise (v3.1.1, RVM: ruby-2.0.0-p247 [global]) [gem]" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -262,6 +194,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="werewolf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="werewolf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="werewolf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="werewolf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="werewolf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -289,15 +253,25 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="locales" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="werewolf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="werewolf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="welcome" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -315,7 +289,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -330,12 +304,15 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="RailsProjectView" />
     </panes>
   </component>
@@ -343,7 +320,8 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="options.lastSelected" value="vcs.Git" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/werewolf_rails_0.0.0-master" />
     <property name="FullScreen" value="false" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -622,11 +600,11 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Rake.db:migrate" />
-      <item index="1" class="java.lang.String" itemvalue="Rake.test" />
-      <item index="2" class="java.lang.String" itemvalue="Rake.spec" />
-      <item index="3" class="java.lang.String" itemvalue="Rails.Production: werewolf" />
-      <item index="4" class="java.lang.String" itemvalue="Rails.Development: werewolf" />
+      <item index="0" class="java.lang.String" itemvalue="Rake.test" />
+      <item index="1" class="java.lang.String" itemvalue="Rake.spec" />
+      <item index="2" class="java.lang.String" itemvalue="Rails.Production: werewolf" />
+      <item index="3" class="java.lang.String" itemvalue="Rails.Development: werewolf" />
+      <item index="4" class="java.lang.String" itemvalue="Rake.db:migrate" />
     </list>
     <recent_temporary>
       <list size="2">
@@ -669,11 +647,11 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294893" sideWeight="0.75399363" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21828665" sideWeight="0.7571885" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23476112" sideWeight="0.75961536" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39903846" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21499176" sideWeight="0.30191693" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2428115" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2428115" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21828665" sideWeight="0.21565495" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24038461" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24038461" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -746,92 +724,108 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/helpers/welcome_helper.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/reports/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/players_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/welcome/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="147" column="147" selection-start="4343" selection-end="4343" vertical-scroll-proportion="-1.4653466" />
+        <state line="17" column="49" selection-start="580" selection-end="599" vertical-scroll-proportion="0.6042654" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/kills_controller.rb">
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p247@global/gems/devise-3.1.1/app/controllers/devise/registrations_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="24" selection-start="2395" selection-end="2395" vertical-scroll-proportion="0.62355214" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/games_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="114" column="47" selection-start="2840" selection-end="2840" vertical-scroll-proportion="2.403941" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/kill.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="5" selection-start="1821" selection-end="1821" vertical-scroll-proportion="0.6621622" />
+        <state line="107" column="21" selection-start="3671" selection-end="3671" vertical-scroll-proportion="0.03348214" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/game.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="173" column="31" selection-start="4776" selection-end="4776" vertical-scroll-proportion="1.6612529" />
+        <state line="16" column="46" selection-start="373" selection-end="373" vertical-scroll-proportion="0.55427253">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="35" selection-start="1749" selection-end="1749" vertical-scroll-proportion="0.0">
+        <state line="14" column="5" selection-start="348" selection-end="348" vertical-scroll-proportion="0.47085202">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="14" selection-start="571" selection-end="571" vertical-scroll-proportion="0.40358743">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/kills_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="23" selection-start="582" selection-end="582" vertical-scroll-proportion="0.5044843">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="14" selection-start="211" selection-end="211" vertical-scroll-proportion="0.9753363">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="52" selection-start="272" selection-end="272" vertical-scroll-proportion="0.5381166">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/player.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="2" selection-start="597" selection-end="597" vertical-scroll-proportion="0.5067568" />
+        <state line="13" column="17" selection-start="530" selection-end="530" vertical-scroll-proportion="0.4503464">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/report.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/reports_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="2" selection-start="84" selection-end="84" vertical-scroll-proportion="0.067567565" />
+        <state line="25" column="0" selection-start="495" selection-end="495" vertical-scroll-proportion="0.8408072">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
+    <entry file="file://$PROJECT_DIR$/app/controllers/players_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="182" column="0" selection-start="6089" selection-end="6089" vertical-scroll-proportion="1.4157044">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="33" selection-start="463" selection-end="463" vertical-scroll-proportion="0.3716216" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/games/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p247@global/gems/devise-3.1.1/app/controllers/devise_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="26" selection-start="1047" selection-end="1047" vertical-scroll-proportion="0.0">
+        <state line="1" column="2" selection-start="32" selection-end="32" vertical-scroll-proportion="0.033632286">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/welcome/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/games_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="16" selection-start="59" selection-end="59" vertical-scroll-proportion="0.0">
+        <state line="148" column="31" selection-start="3950" selection-end="3950" vertical-scroll-proportion="4.3049326">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rvm/rubies/ruby-2.0.0-p247/lib/ruby/2.0.0/webrick/utils.rb">
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="0" selection-start="2256" selection-end="2256" vertical-scroll-proportion="0.33258426" />
+        <state line="38" column="19" selection-start="1684" selection-end="1684" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="39" selection-start="162" selection-end="162" vertical-scroll-proportion="0.33632287">
+        <state line="2" column="2" selection-start="125" selection-end="125" vertical-scroll-proportion="0.06726457">
           <folding />
         </state>
       </provider>

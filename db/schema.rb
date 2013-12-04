@@ -14,68 +14,57 @@
 ActiveRecord::Schema.define(:version => 20131022030357) do
 
   create_table "games", :force => true do |t|
-    t.integer  "dayNightFreq"
-    t.boolean  "dayORnight"
+    t.integer  "dayNightFreq", :null => false
+    t.string   "game_state",   :null => false
+    t.float    "kill_radius",  :null => false
+    t.float    "scent_radius", :null => false
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
-    t.string   "game_state"
-    t.float    "kill_radius"
-    t.float    "scent_radius"
   end
 
   create_table "kills", :force => true do |t|
-    t.string   "killerID"
-    t.string   "victimID"
-    t.float    "lat"
-    t.float    "lng"
+    t.string   "killerID",   :null => false
+    t.string   "victimID",   :null => false
+    t.float    "lat",        :null => false
+    t.float    "lng",        :null => false
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
 
   create_table "players", :force => true do |t|
-    t.integer  "UserID",     :limit => 255
-    t.string   "Alignment"
-    t.boolean  "isDead"
-    t.float    "lat"
-    t.float    "lng"
-    t.datetime "created_at",                :null => false
-    t.datetime "updated_at",                :null => false
-    t.string   "nickname"
-    t.integer  "score"
-    t.integer  "votes_for"
-    t.integer  "game_id"
-    t.string   "vote_cast"
-    t.string   "kill_made"
+    t.string   "nickname",   :null => false
+    t.string   "vote_cast",  :null => false
+    t.string   "kill_made",  :null => false
+    t.integer  "game_ID",    :null => false
+    t.integer  "user_id",    :null => false
+    t.string   "alignment",  :null => false
+    t.string   "isDead",     :null => false
+    t.float    "lat",        :null => false
+    t.float    "lng",        :null => false
+    t.integer  "score",      :null => false
+    t.integer  "votes_for",  :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "reports", :force => true do |t|
-    t.integer  "high_score"
-    t.integer  "game_ID"
-    t.string   "winners"
-    t.string   "most_kills"
+    t.string  "high_score",  :null => false
+    t.integer  "game_ID",    :null => false
+    t.string   "winners",    :null => false
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
 
   create_table "users", :force => true do |t|
-    t.string   "email",                  :default => "", :null => false
-    t.string   "encrypted_password",     :default => "", :null => false
-    t.string   "reset_password_token"
-    t.datetime "reset_password_sent_at"
-    t.datetime "remember_created_at"
-    t.integer  "sign_in_count",          :default => 0,  :null => false
-    t.datetime "current_sign_in_at"
-    t.datetime "last_sign_in_at"
-    t.string   "current_sign_in_ip"
-    t.string   "last_sign_in_ip"
-    t.datetime "created_at",                             :null => false
-    t.datetime "updated_at",                             :null => false
-    t.boolean  "admin"
-    t.integer  "total_score"
-    t.integer  "high_score"
+    t.string   "email",         :null => false
+    t.string   "password_hash", :null => false
+    t.string   "password_salt", :null => false
+    t.integer  "total_score",   :null => false
+    t.integer  "high_score",    :null => false
+    t.integer  "level",         :null => false
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
   end
 
-  add_index "users", ["email"], :name => "index_users_on_email", :unique => true
-  add_index "users", ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true
 
 end

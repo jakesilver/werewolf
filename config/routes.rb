@@ -3,14 +3,31 @@ Werewolf::Application.routes.draw do
 
 
 
+  get "sessions/new"
+
+  get "users/new"
+
   #get "welcome/index"
 
-  root :to => 'welcome#index'
+  root :to => "reports#index"
 
-  devise_for :users, :path_names => { :sign_up => 'register' } do
 
-    get '/users/sign_out' => 'devise/sessions#destroy'
+
+
+
+
+=begin
+  devise_scope :user do
+    root :to => 'devise/sessions#new'
+
   end
+=end
+
+
+
+
+
+
 
   resources :players
 

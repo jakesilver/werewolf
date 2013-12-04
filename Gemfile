@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.14'
+gem 'rails', '3.2.13'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -13,9 +13,9 @@ group :production do
   gem 'pg'
 end
 
-gem 'devise'
-
-gem 'rufus-scheduler', '~> 2.0'                     #for turning day/night on and off
+gem 'jquery-rails'
+gem 'rufus-scheduler', '2.0.24'
+gem 'bcrypt-ruby'
 
 
 
@@ -31,7 +31,6 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

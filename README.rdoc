@@ -1,3 +1,10 @@
 == Werewolf Web Ruby On Rails App Deployed on Heroku
 
+I used the the authentication solution "Devise" which
+-Is Rack based;
+-Is a complete MVC solution based on Rails engines;
+-Allows you to have multiple models signed in at the same time;
+-Is based on a modularity concept: use just what you really need.
+
+The normal user can only access the sign in pages and
 
