@@ -102,7 +102,7 @@ class UsersController < ApplicationController
           details['vote']="yes"
         end
       end
-      details['days'] = (Time.now - Game.find(@player.game_ID).created_at)
+      details['days'] = ((Time.now - Game.find(@player.game_ID).created_at)/3600)
       details['game_score'] = Player.find_by_user_id(current_user.id).score
       details['alive'] = Player.find_by_user_id(current_user.id).isDead
       details['werewolf']=0
