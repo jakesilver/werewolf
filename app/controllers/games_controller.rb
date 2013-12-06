@@ -76,6 +76,7 @@ class GamesController < ApplicationController
   def destroy
     @game = Game.find(params[:id])
     @game.destroy
+    Player.delete_all
 
 
     respond_to do |format|

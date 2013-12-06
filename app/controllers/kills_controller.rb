@@ -6,7 +6,7 @@ class KillsController < ApplicationController
         if (((Time.now - Game.last.created_at) % (120*Game.last.dayNightFreq)) < (Game.last.dayNightFreq*60))  #daytime
           Kill.all.each do |kill|
             if Time.now - kill.created_at < 120*Game.last.dayNightFreq
-              kills_hash[i] = Player.find_by_user_id(@kills[i].victimID).nickname+ " was killed at " \
+              kills_hash[i] = Player.find_by_user_id(@kills[i].victimID).nickname+ " killed at " \
               + @kills[i].created_at.to_s.split("UTC")[0] + " at position : " + @kills[i].lat.to_s + ",  " \
               + @kills[i].lng.to_s
             end
