@@ -84,6 +84,7 @@ class UsersController < ApplicationController
     details=Hash.new
     details['vote']="no"
     details['kill']="no"
+
     details['total_score'] = current_user.total_score
     details['high_score'] = current_user.high_score
     details['username'] = current_user.email.split("@")[0]
@@ -101,6 +102,7 @@ class UsersController < ApplicationController
           details['vote']="yes"
         end
       end
+      details['days'] = (Time.now - Game.find(@player.game_ID).created_at)
       details['game_score'] = Player.find_by_user_id(current_user.id).score
       details['alive'] = Player.find_by_user_id(current_user.id).isDead
       details['werewolf']=0

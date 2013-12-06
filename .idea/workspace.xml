@@ -7,10 +7,11 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/players_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/players_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" />
     </list>
     <ignored path="werewolf.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="c3b0618d-e2c3-415f-b555-48aa1bd30824" time="1386117283130" ignored="false" />
+    <file path="/Dummy.txt" changelist="c3b0618d-e2c3-415f-b555-48aa1bd30824" time="1386323292549" ignored="false" />
     <file path="/Gemfile" changelist="c3b0618d-e2c3-415f-b555-48aa1bd30824" time="1382571293495" ignored="false" />
     <file path="/new.html.erb" changelist="c3b0618d-e2c3-415f-b555-48aa1bd30824" time="1386235738881" ignored="false" />
     <file path="/routes.rb" changelist="c3b0618d-e2c3-415f-b555-48aa1bd30824" time="1386322349720" ignored="false" />
@@ -35,7 +36,7 @@
     <file path="/welcome_controller.rb" changelist="c3b0618d-e2c3-415f-b555-48aa1bd30824" time="1382577815677" ignored="false" />
     <file path="/registrations_controller.rb" changelist="c3b0618d-e2c3-415f-b555-48aa1bd30824" time="1382578943419" ignored="false" />
     <file path="/reports_controller.rb" changelist="c3b0618d-e2c3-415f-b555-48aa1bd30824" time="1382579136199" ignored="false" />
-    <file path="/users_controller.rb" changelist="c3b0618d-e2c3-415f-b555-48aa1bd30824" time="1386142140936" ignored="false" />
+    <file path="/users_controller.rb" changelist="c3b0618d-e2c3-415f-b555-48aa1bd30824" time="1386323321808" ignored="false" />
     <file path="$USER_HOME$/Downloads/werewolf_rails_0.0.0-master/app/models/player.rb" changelist="c3b0618d-e2c3-415f-b555-48aa1bd30824" time="1386130361140" ignored="false" />
     <file path="$USER_HOME$/Downloads/werewolf_rails_0.0.0-master/app/views/layouts/application.html.erb" changelist="c3b0618d-e2c3-415f-b555-48aa1bd30824" time="1386133078643" ignored="false" />
     <file path="$USER_HOME$/Downloads/werewolf_rails_0.0.0-master/config/routes.rb" changelist="c3b0618d-e2c3-415f-b555-48aa1bd30824" time="1386144543882" ignored="false" />
@@ -99,10 +100,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="users_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="users_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="112" column="12" selection-start="2891" selection-end="2891" vertical-scroll-proportion="0.0">
+            <state line="105" column="18" selection-start="2606" selection-end="2606" vertical-scroll-proportion="0.38053098">
               <folding />
             </state>
           </provider>
@@ -117,10 +118,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="games_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="games_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/games_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="151" column="21" selection-start="3998" selection-end="3998" vertical-scroll-proportion="0.7443182">
+            <state line="146" column="15" selection-start="3892" selection-end="3892" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -157,7 +158,6 @@
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/views/users/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/games/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/game.rb" />
         <option value="$PROJECT_DIR$/app/controllers/kills_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/users/new.html.erb" />
@@ -165,6 +165,7 @@
         <option value="$PROJECT_DIR$/app/controllers/players_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/games_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
       </list>
     </option>
   </component>
@@ -775,7 +776,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1260" height="721" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -785,7 +786,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23476112" sideWeight="0.6458333" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39903846" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21828665" sideWeight="0.21565495" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35416666" sideWeight="0.12850082" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35416666" sideWeight="0.12850082" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35416666" sideWeight="0.8714992" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -949,13 +950,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="12" selection-start="2891" selection-end="2891" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/players_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="160" column="40" selection-start="5335" selection-end="5335" vertical-scroll-proportion="0.0">
@@ -965,7 +959,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/games_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="151" column="21" selection-start="3998" selection-end="3998" vertical-scroll-proportion="0.7443182">
+        <state line="146" column="15" selection-start="3892" selection-end="3892" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="105" column="18" selection-start="2606" selection-end="2606" vertical-scroll-proportion="0.38053098">
           <folding />
         </state>
       </provider>
