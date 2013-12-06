@@ -70,7 +70,7 @@ class PlayersController < ApplicationController
   end
 
   def vote_for_player
-    @player = Player.find_by_user_id(current_user.id)
+    @player =Player.find_by_user_id(current_user.id)
     @voted = Player.find_by_nickname(params[:nickname])
     puts current_user.id
     puts @voted.nickname
@@ -97,6 +97,14 @@ class PlayersController < ApplicationController
         format.json { render json: "{'message':'vote unsuccessful'}"}
       end
     end
+  end
+
+  def days_elapsed
+    @days =(Time.now - Game.find(@player.game_ID).created_at)
+    respond_to do |format|
+      format.json {render json: @days}
+      end
+
   end
 
   def players_alive                         #create hash of all alive players
