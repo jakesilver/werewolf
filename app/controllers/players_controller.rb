@@ -99,13 +99,6 @@ class PlayersController < ApplicationController
     end
   end
 
-  def days_elapsed
-    @days =(Time.now - Game.find(@player.game_ID).created_at)
-    respond_to do |format|
-      format.json {render json: @days}
-      end
-
-  end
 
   def players_alive                         #create hash of all alive players
     alive = Hash.new

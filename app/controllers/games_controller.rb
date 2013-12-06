@@ -141,6 +141,14 @@ class GamesController < ApplicationController
     end
   end
 
+  def days_elapsed
+    @days =(Time.now - Game.find(@player.game_ID).created_at)
+    respond_to do |format|
+      format.json {render json: @days}
+    end
+
+  end
+
   def current_game
     if !Game.last.nil?
       if (Game.last.game_state == "started") and (Player.count != 0)

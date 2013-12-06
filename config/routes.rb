@@ -26,6 +26,7 @@ Werewolf::Application.routes.draw do
   get "logged_in" => "sessions#create", :as => "logged_in"
   get "night_vs_day" => "games#night_vs_day", :as => "night_vs_day"
   get "current_game" => "games#current_game", :as => "current_game"
+  get "days_elapsed" => "games#days_elapsed", :as => "days_elapsed"
 
 
 
