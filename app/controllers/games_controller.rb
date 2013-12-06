@@ -142,12 +142,15 @@ class GamesController < ApplicationController
   end
 
   def days_elapsed
+    numDays = Hash.new
     @days =(Time.now - Game.find(@player.game_ID).created_at)
+    numDays["days"] = @days
     respond_to do |format|
-      format.json {render json: @days}
+      format.json {render json: numDays}
     end
-
   end
+
+
 
   def current_game
     if !Game.last.nil?
