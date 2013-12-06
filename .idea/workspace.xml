@@ -20,7 +20,7 @@
     <file path="/seeds.rb" changelist="c3b0618d-e2c3-415f-b555-48aa1bd30824" time="1386138456663" ignored="false" />
     <file path="/user.rb" changelist="c3b0618d-e2c3-415f-b555-48aa1bd30824" time="1386139492126" ignored="false" />
     <file path="/kills_controller.rb" changelist="c3b0618d-e2c3-415f-b555-48aa1bd30824" time="1386143474824" ignored="false" />
-    <file path="/games_controller.rb" changelist="c3b0618d-e2c3-415f-b555-48aa1bd30824" time="1386322859207" ignored="false" />
+    <file path="/games_controller.rb" changelist="c3b0618d-e2c3-415f-b555-48aa1bd30824" time="1386323070362" ignored="false" />
     <file path="/README.rdoc" changelist="c3b0618d-e2c3-415f-b555-48aa1bd30824" time="1382456804287" ignored="false" />
     <file path="/application_controller.rb" changelist="c3b0618d-e2c3-415f-b555-48aa1bd30824" time="1382574628019" ignored="false" />
     <file path="/players_controller.rb" changelist="c3b0618d-e2c3-415f-b555-48aa1bd30824" time="1386322192750" ignored="false" />
@@ -75,7 +75,7 @@
       <file leaf-file-name="players_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/players_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="100" column="0" selection-start="3613" selection-end="3613" vertical-scroll-proportion="0.0">
+            <state line="160" column="40" selection-start="5335" selection-end="5335" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -84,7 +84,7 @@
       <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="79" selection-start="986" selection-end="986" vertical-scroll-proportion="0.0">
+            <state line="21" column="32" selection-start="1092" selection-end="1092" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -120,7 +120,7 @@
       <file leaf-file-name="games_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/games_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="152" column="0" selection-start="3988" selection-end="3988" vertical-scroll-proportion="0.80965906">
+            <state line="151" column="21" selection-start="3998" selection-end="3998" vertical-scroll-proportion="0.7443182">
               <folding />
             </state>
           </provider>
@@ -775,7 +775,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1260" height="721" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -785,7 +785,7 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23476112" sideWeight="0.6458333" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39903846" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21828665" sideWeight="0.21565495" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35416666" sideWeight="0.12850082" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35416666" sideWeight="0.12850082" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35416666" sideWeight="0.8714992" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -935,16 +935,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/game.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="79" selection-start="986" selection-end="986" vertical-scroll-proportion="0.0">
+        <state line="59" column="4" selection-start="1273" selection-end="1290" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/game.rb">
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="4" selection-start="1273" selection-end="1290" vertical-scroll-proportion="0.0">
+        <state line="21" column="32" selection-start="1092" selection-end="1092" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -958,14 +958,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/players_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="0" selection-start="3613" selection-end="3613" vertical-scroll-proportion="0.0">
+        <state line="160" column="40" selection-start="5335" selection-end="5335" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/games_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="152" column="0" selection-start="3988" selection-end="3988" vertical-scroll-proportion="0.80965906">
+        <state line="151" column="21" selection-start="3998" selection-end="3998" vertical-scroll-proportion="0.7443182">
           <folding />
         </state>
       </provider>
