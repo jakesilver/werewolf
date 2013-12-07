@@ -50,6 +50,11 @@ class PlayersController < ApplicationController
   end
 
   def report_position
+    puts "***************************"
+    puts "REPORTING POSITION"
+    puts "                 "
+    puts "***************************"
+
     @player = Player.find_by_user_id(current_user.id)
     state = Hash.new
     if !@player.nil?
