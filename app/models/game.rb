@@ -46,7 +46,7 @@ class Game < ActiveRecord::Base
       @scheduler2 = Rufus::Scheduler.start_new
       @scheduler2.every (Rufus.to_time_string (@cur_game.dayNightFreq*120)) do
         if Game.find(game_id).game_state != "ended"
-          poll_votes(game_id)
+          poll_votes(Game.find(game_id))
         else
           @scheduler2.stop
           #puts "stopped scheduler"
@@ -72,20 +72,20 @@ class Game < ActiveRecord::Base
     puts "Polling Votes"
     puts Time.now
 
-    @players = Player.where(:isDead => "false").all
-
-    @most_votes= @players[0]
-    i=0
-    while i<@players.length
-      if @players[i].votes_for > @most_votes.votes_for
-        @most_votes = @players[i]
+    @players = Player.where(:isDead => 'false')
+    @high_votes = @players[0]
+    i = 0
+    while i < @players.length
+      if @players[i].votes_for > @high_votes.votes_for
+        @high_votes = @players[i]
       end
-      i+=1
+      i += 1
     end
-    if @most_votes.votes_for > 0
-      @most_votes.isDead = "true"
-      @most_votes.save
+    puts @high_votes.nickname
+    if @high_votes.votes_for != 0
+      @high_votes.isDead = "true"
     end
+    @high_votes.save
 
     Player.all.each do |player|
       if player.isDead == "false"
