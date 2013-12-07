@@ -157,7 +157,7 @@ class UsersController < ApplicationController
   def gscoreboard
     score_hash = Hash.new
     if (!User.first.nil?)
-      scores = User.find(:all, :order => 'high score desc', :limit => 5)
+      scores = User.find(:all, :order => 'high_score desc', :limit => 5)
       i = 0
       while i < 5
         if !scores[i].nil?
