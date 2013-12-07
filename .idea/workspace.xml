@@ -73,10 +73,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="players_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="players_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/players_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="160" column="40" selection-start="5335" selection-end="5335" vertical-scroll-proportion="0.0">
+            <state line="65" column="28" selection-start="2386" selection-end="2386" vertical-scroll-proportion="0.5441989">
               <folding />
             </state>
           </provider>
@@ -85,25 +85,16 @@
       <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="2" selection-start="1532" selection-end="1532" vertical-scroll-proportion="0.0">
+            <state line="16" column="28" selection-start="702" selection-end="702" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="game.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/game.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="4" selection-start="1273" selection-end="1290" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="users_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="users_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="104" column="24" selection-start="2537" selection-end="2537" vertical-scroll-proportion="0.82300884">
+            <state line="102" column="38" selection-start="2502" selection-end="2502" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -162,10 +153,10 @@
         <option value="$PROJECT_DIR$/app/controllers/kills_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/users/new.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/players_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/controllers/games_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/players_controller.rb" />
       </list>
     </option>
   </component>
@@ -922,9 +913,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/games_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="48" selection-start="1664" selection-end="1664" vertical-scroll-proportion="0.0">
+        <state line="141" column="5" selection-start="3771" selection-end="3771" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -936,37 +927,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/game.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="4" selection-start="1273" selection-end="1290" vertical-scroll-proportion="0.0">
+        <state line="102" column="38" selection-start="2502" selection-end="2502" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/players_controller.rb">
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="160" column="40" selection-start="5335" selection-end="5335" vertical-scroll-proportion="0.0">
+        <state line="37" column="48" selection-start="1664" selection-end="1664" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/game.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="59" column="4" selection-start="1273" selection-end="1290" vertical-scroll-proportion="0.55397725">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="2" selection-start="1532" selection-end="1532" vertical-scroll-proportion="0.0">
+        <state line="16" column="28" selection-start="702" selection-end="702" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/games_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/players_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="141" column="5" selection-start="3771" selection-end="3771" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="24" selection-start="2537" selection-end="2537" vertical-scroll-proportion="0.82300884">
+        <state line="65" column="28" selection-start="2386" selection-end="2386" vertical-scroll-proportion="0.5441989">
           <folding />
         </state>
       </provider>
