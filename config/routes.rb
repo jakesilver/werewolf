@@ -13,7 +13,7 @@ Werewolf::Application.routes.draw do
   get "vote_for_player" => "players#vote_for_player", :as => "vote_for_player"
   get "get_votables" => "players#get_votables", :as => "get_votables"
   get "restart_game" => "games#restart_game", :as => "restart_game"
-  get "report_position/:lat/:lng" => "players#report_position", :as => "report_position"
+  get "report_position" => "players#report_position", :as => "report_position"
   get "totalscoreboard" => "users#totalscoreboard", :as => "totalscoreboard"
   get "gscoreboard" => "users#gscoreboard", :as => "gscoreboard"
   get "start_game/:dayNightFreq/:kill_radius/:scent_radius" => "games#start_game", :as => "start_game"

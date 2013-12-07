@@ -49,7 +49,7 @@ class Game < ActiveRecord::Base
           poll_votes(Game.find(game_id))
         else
           @scheduler2.stop
-          #puts "stopped scheduler"
+          puts "stopped scheduler"
         end
 
       end
@@ -69,8 +69,10 @@ class Game < ActiveRecord::Base
 
   def poll_votes(game_id)
 
-    puts "Polling Votes"
-    puts Time.now
+    puts "***************************"
+    puts "POLLING VOTES"
+    puts "                 "
+    puts "***************************"
 
     @players = Player.where(:isDead => 'false')
     @high_votes = @players[0]
@@ -81,10 +83,12 @@ class Game < ActiveRecord::Base
       end
       i += 1
     end
+
     puts @high_votes.nickname
     if @high_votes.votes_for != 0
       @high_votes.isDead = "true"
     end
+
     @high_votes.save
 
     Player.all.each do |player|
