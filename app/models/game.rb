@@ -115,7 +115,7 @@ class Game < ActiveRecord::Base
         @new_report.winners = "Werewolves"
         Player.all.each do |player|
           if player.alignment == "werewolf" and player.isDead == "false"
-            player.score += 500
+            player.score += 150
             player.save
           end
         end
@@ -123,7 +123,7 @@ class Game < ActiveRecord::Base
         @new_report.winners = "Townspeople"
         Player.all.each do |player|
           if player.alignment == "townsperson" and player.isDead == "false"
-            player.score += 500
+            player.score += 150
             player.save
           end
         end
@@ -139,11 +139,13 @@ class Game < ActiveRecord::Base
       @new_report.save
 
       Player.all.each do |player|
-        User.find(player.user_id).total_score += player.score
-        if player.score > User.find(player.user_id).high_score
-          User.find(player.user_id).high_score = player.score
+        @userr = User.find(player.user_id)
+        @userr.total_score += player.score
+        if player.score > @userr.high_score
+          @userr.high_score = player.score
         end
-        User.find(player.user_id).save
+        @userr.level = @userr.total_score / 500
+        @userr.save
       end
 
       Player.delete_all

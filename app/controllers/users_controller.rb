@@ -119,7 +119,10 @@ class UsersController < ApplicationController
       details['place']=Player.order('score').all.index(Player.find_by_user_id(current_user.id))
     else
       details['isgame']= "no game"
-      details['status']="No Game Playing"
+      details['status']="Game OVER: "
+      if !Report.last.nil?
+        details['status'] += Report.last.winners + " win"
+      end
       details['game_score']=""
       details['alive']=""
       details['werewolf']=0
@@ -138,7 +141,11 @@ class UsersController < ApplicationController
     scores = User.find(:all, :order => 'total_score desc', :limit => 5)
     i = 0
     while i < 5
-      score_hash[i]=scores[i].email.split("@")[0] + ": " +scores[i].total_score.to_s
+      if !scores[i].nil?
+        score_hash[i]=scores[i].email.split("@")[0] + ": " +scores[i].total_score.to_s
+      else
+        score_hash[i]=""
+      end
       i+=1
     end
 #
@@ -149,15 +156,19 @@ class UsersController < ApplicationController
   end
   def gscoreboard
     score_hash = Hash.new
-    if (!Player.first.nil?)
-      scores = Player.find(:all, :order => 'score desc', :limit => 5)
+    if (!User.first.nil?)
+      scores = User.find(:all, :order => 'high score desc', :limit => 5)
       i = 0
       while i < 5
-        score_hash[i]=scores[i].nickname.to_s + ": " + scores[i].score.to_s
+        if !scores[i].nil?
+          score_hash[i]=scores[i].email.split("@")[0] + ": " + scores[i].high_score.to_s
+        else
+          score_hash[i]=""
+        end
         i+=1
       end
     else
-      score_hash[0] = "No Current Game"
+      score_hash[0] = "No Current Users"
       score_hash[1] = "N/A"
       score_hash[2] = "N/A"
       score_hash[3] = "N/A"
