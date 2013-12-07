@@ -37,6 +37,7 @@ class SessionsController < ApplicationController
     session[:user_id] = nil
     respond_to do |format|
       format.json { render json: "{'message':'logged out'}"}
+      format.html {redirect_to sign_up_path}
     end
   end
 
